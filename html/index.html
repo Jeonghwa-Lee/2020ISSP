@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Sejong</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <ul>
+        <li class="menu_li">
+          <div><img id="logo" src="images/logo.png" /></div>
+        </li>
+
+        <li class="menu_li"><a href="index.html">NOTICE</a></li>
+
+        <li class="menu_li"><a href="facilities.html"> FACILITIES </a></li>
+
+        <li class="menu_li"><a href="information.html">INFORMATION</a></li>
+
+        <li class="menu_li">
+          <a href="saved.html">SAVED</a>
+
+          <ul id="nav">
+            <li><a href="noticeSaved.html">NOTICE</a></li>
+            <li><a href="facilitiesSaved.html">FACILITIES</a></li>
+            <li><a href="informationSaved.html">INFORMATION</a></li>
+          </ul>
+        </li>
+
+        <li class="menu_li"><h3 id="b_login">SIGN IN</h3></li>
+      </ul>
+    </header>
+
+    <div id="map"></div>
+
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f0906080de8b4f813b522d46dbdc2649"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
