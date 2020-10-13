@@ -3,7 +3,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "noto sans semibold";
+  font-family: "Noto Sans";
+  font-weight: bold;
+  font-size: 14pt;
 }
 
 a {
@@ -34,15 +36,15 @@ a {
 }
 
 #logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 12px;
   float: left;
   width: 50px;
   height: 50px;
-  margin-left: 50px;
+  margin-left: 48px;
 }
+
 #menu {
-  width: 700px;
+  width: 900px;
   margin: 0 auto;
 }
 
@@ -54,14 +56,30 @@ a {
 .menu_li > a,
 #nav > li > a {
   display: block;
-  width: 150px;
-  color: grey;
-  transition: 0.2s;
+  color: #808080;
+  transition: color 0.2s;
 }
 
-.menu_li > a:hover,
-#nav > li > a:hover {
+#nav > li > a {
+  padding-right: 13px;
+  padding-left: 13px;
+}
+
+#nav > li:first-child > a {
+  padding-left: 1050px;
+}
+
+.menu_li > a {
+  padding-right: 47px;
+  padding-left: 47px;
+}
+
+.menu_li > a:hover {
   color: black;
+}
+
+#nav > li > a:hover {
+  color: #c10230;
 }
 
 #nav {
@@ -70,9 +88,9 @@ a {
   height: 0px;
   overflow: hidden;
   transition: height 0.2s;
-  background-color: lightgray;
+  background-color: rgba(255, 255, 255, 0.7);
   left: 0px;
-  top: 71px;
+  top: 74px;
 }
 
 #nav > li {
@@ -86,12 +104,11 @@ a {
 }
 
 #b_login {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-right: 50px;
-  background-color: navy;
+  margin-top: 18px;
+  margin-right: 44px;
+  background-color: #375065;
   color: white;
-  width: 100px;
+  width: 98px;
   height: 40px;
   border-radius: 20px;
   text-align: center;
@@ -101,7 +118,55 @@ a {
 
 hr {
   width: 99.9%;
+  color: #cbcbcb;
 }
+
+/* 공지사항 페이지 */
+#noticeArticle {
+  width: 1460px;
+  height: 830px;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+#noticeMainBox {
+  border: 1px solid #cbcbcb;
+  width: 710px;
+  height: 705px;
+  float: left;
+}
+
+#noticeArticleBox {
+  width: 710px;
+  height: 705px;
+  float: right;
+}
+
+/* 기본 설정 */
+#pageTitle_b {
+  font-size: 46px;
+  margin-bottom: 45px;
+}
+
+.articleBox {
+  border: 1px solid #cbcbcb;
+  width: 335px;
+  height: 335px;
+  display: inline-block;
+  margin: 0;
+}
+
+.articleBox:nth-child(2),
+.articleBox:nth-child(4) {
+  float: right;
+  background-color: #f0efee;
+}
+
+.articleBox:nth-child(3),
+.articleBox:nth-child(4) {
+  margin-top: 28px;
+}
+
 /* 지도 */
 
 #map {
