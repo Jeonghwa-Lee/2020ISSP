@@ -20,37 +20,33 @@ a {
   position: relative;
 }
 
-#header > ul,
-#header > ul > li > ul {
+#header > #menu > ul,
+#header > #menu > ul > li > #nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-#header > ul > li {
+#header > #menu > ul > li {
   float: left;
   vertical-align: middle;
   text-align: center;
 }
 
-#header > ul > li > div > img {
+#logo {
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-right: 500px;
   float: left;
   width: 50px;
   height: 50px;
   margin-left: 50px;
 }
-
-.menu_li {
-  border-bottom: 1px solid grey;
+#menu {
+  width: 700px;
+  margin: 0 auto;
 }
 
-.menu_li:nth-child(2),
-.menu_li:nth-child(3),
-.menu_li:nth-child(4),
-.menu_li:nth-child(5) {
+.menu_li {
   padding-bottom: 24px;
   padding-top: 24px;
 }
@@ -60,6 +56,7 @@ a {
   display: block;
   width: 150px;
   color: grey;
+  transition: 0.2s;
 }
 
 .menu_li > a:hover,
@@ -69,13 +66,13 @@ a {
 
 #nav {
   position: absolute;
-  width: 1920px;
+  width: 99.9%;
   height: 0px;
   overflow: hidden;
   transition: height 0.2s;
   background-color: lightgray;
   left: 0px;
-  top: 70px;
+  top: 71px;
 }
 
 #nav > li {
@@ -92,7 +89,6 @@ a {
   margin-top: 15px;
   margin-bottom: 15px;
   margin-right: 50px;
-  margin-left: 570px;
   background-color: navy;
   color: white;
   width: 100px;
@@ -100,11 +96,15 @@ a {
   border-radius: 20px;
   text-align: center;
   line-height: 40px;
+  float: right;
 }
 
+hr {
+  width: 99.9%;
+}
 /* 지도 */
 
 #map {
-  width: 1920px;
+  width: 99.9%;
   height: 500px;
 }
