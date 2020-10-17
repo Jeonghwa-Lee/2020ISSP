@@ -121,7 +121,94 @@ hr {
   color: #cbcbcb;
 }
 
+/*홈*/
+
+#home_main {
+  float: left;
+  width: 962px;
+  height: 894px;
+  overflow: hidden;
+}
+
+#homeMainImg {
+  width: 962px;
+}
+
+#cardnews {
+  float: left;
+  height: 420px;
+  width: 430px;
+  overflow: hidden;
+  margin-top: 27px;
+  margin-left: 30px;
+}
+
+#homeCardnews {
+  height: 430px;
+}
+
+#map_main {
+  width: 890px;
+  height: 400px;
+  float: right;
+  margin-right: 39px;
+  margin-top: 25px;
+}
+
+#homeNotice {
+  float: left;
+  width: 355px;
+  height: 353px;
+  margin-top: 27px;
+  margin-left: 35px;
+  border: 1px solid #cbcbcb;
+  padding: 36px 40px 28px 26px;
+}
+
+#homeNTilte {
+  margin-bottom: 18px;
+  font-size: 21px;
+}
+
+#homeNarticle {
+  margin-bottom: 229px;
+  font-size: 21px;
+  font-weight: lighter;
+}
+
+#homeNotice > a {
+  color: #424242;
+  font-weight: normal;
+}
+
+#homeDate {
+  color: #424242;
+  font-weight: normal;
+  float: right;
+}
+
 /* 공지사항 페이지 */
+
+#modal_popup {
+  display: none;
+  position: fixed;
+  z-index: 999999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(111, 98, 89, 0.8);
+}
+
+#modal_c {
+  background-color: #ffffff;
+  margin: 8% auto;
+  border: 1px solid #cbcbcb;
+  width: 710px;
+  height: 705px;
+}
+
 #noticeArticle {
   width: 1460px;
   height: 830px;
@@ -142,13 +229,15 @@ hr {
   float: right;
 }
 
-/* 기본 설정 */
-#pageTitle_b {
+#nPageTitle {
   font-size: 46px;
   margin-bottom: 45px;
 }
 
-.articleBox {
+#articleBox1,
+#articleBox2,
+#articleBox3,
+#articleBox4 {
   border: 1px solid #cbcbcb;
   width: 335px;
   height: 335px;
@@ -156,14 +245,14 @@ hr {
   margin: 0;
 }
 
-.articleBox:nth-child(2),
-.articleBox:nth-child(4) {
+#articleBox2,
+#articleBox4 {
   float: right;
   background-color: #f0efee;
 }
 
-.articleBox:nth-child(3),
-.articleBox:nth-child(4) {
+#articleBox3,
+#articleBox4 {
   margin-top: 28px;
 }
 
