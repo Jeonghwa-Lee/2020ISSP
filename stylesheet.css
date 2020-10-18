@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", "Noto Sans CJK";
   font-weight: bold;
   font-size: 14pt;
 }
@@ -197,7 +197,7 @@ hr {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto;
+  overflow: hidden;
   background-color: rgba(111, 98, 89, 0.8);
 }
 
@@ -205,8 +205,9 @@ hr {
   background-color: #ffffff;
   margin: 8% auto;
   border: 1px solid #cbcbcb;
-  width: 710px;
-  height: 705px;
+  width: 625px;
+  height: 595px;
+  padding: 61px 41px 47px 40px;
 }
 
 #noticeArticle {
@@ -218,9 +219,10 @@ hr {
 
 #noticeMainBox {
   border: 1px solid #cbcbcb;
-  width: 710px;
-  height: 705px;
+  width: 625px;
+  height: 595px;
   float: left;
+  padding: 61px 41px 47px 40px;
 }
 
 #noticeArticleBox {
@@ -239,10 +241,11 @@ hr {
 #articleBox3,
 #articleBox4 {
   border: 1px solid #cbcbcb;
-  width: 335px;
-  height: 335px;
+  width: 282px;
+  height: 283px;
   display: inline-block;
   margin: 0;
+  padding: 28px 31px 22px 20px;
 }
 
 #articleBox2,
@@ -254,6 +257,58 @@ hr {
 #articleBox3,
 #articleBox4 {
   margin-top: 28px;
+}
+
+.NMBTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.NMBSubtitle {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.NMBAriticle {
+  margin-top: 71px;
+  margin-bottom: 160px;
+}
+
+.NMBAriticle > p {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 18px;
+}
+
+.NMBDate {
+  font-size: 16pt;
+  font-weight: lighter;
+}
+
+.NSTitle {
+  margin-bottom: 14px;
+  font-size: 17px;
+}
+
+.NSsubtitle {
+  margin-bottom: 181px;
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+.NSvm {
+  color: #424242;
+  font-weight: normal;
+  font-size: 14px;
+  float: left;
+}
+
+.NSdate {
+  color: #424242;
+  font-weight: normal;
+  float: right;
+  font-size: 14px;
 }
 
 /* 지도 */
