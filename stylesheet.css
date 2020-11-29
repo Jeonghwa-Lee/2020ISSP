@@ -311,7 +311,7 @@ hr {
   font-size: 14px;
 }
 
-/* 지도 */
+/* 지도 및 박스 */
 
 #map {
   width: 99.9%;
@@ -322,9 +322,9 @@ hr {
   position: absolute;
   left: 0;
   bottom: 40px;
-  width: 288px;
-  height: 132px;
-  margin-left: -144px;
+  width: 364px;
+  height: 546px;
+  margin-left: -182px;
   text-align: left;
   overflow: hidden;
   font-size: 12px;
@@ -335,67 +335,52 @@ hr {
   margin: 0;
 }
 .wrap .info {
-  width: 286px;
-  height: 120px;
-  border-radius: 5px;
-  border-bottom: 2px solid #ccc;
-  border-right: 1px solid #ccc;
+  width: 364px;
+  height: 534px;
+  border-radius: 10px;
   overflow: hidden;
   background: #fff;
-}
-.wrap .info:nth-child(1) {
-  border: 0;
   box-shadow: 0px 1px 2px #888;
 }
+
+.title > h1 {
+  font-size: 33px;
+  margin-top: 15px;
+  margin-left: 18px;
+}
+
 .info .title {
-  padding: 5px 0 0 10px;
-  height: 30px;
-  background: #eee;
-  border-bottom: 1px solid #ddd;
-  font-weight: bold;
+  height: 62px;
 }
-.info .close {
+
+.title .close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 27.8px;
+  right: 18.8px;
   color: #888;
-  width: 17px;
-  height: 17px;
-  background: url("https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png");
+  width: 90px;
+  height: 20px;
+  background: url("images/finfoboxmenu.png");
 }
-.info .close:hover {
+.title .close:hover {
   cursor: pointer;
 }
+
 .info .body {
   position: relative;
   overflow: hidden;
+  height: 470px;
 }
-.info .desc {
-  position: relative;
-  margin: 13px 0 0 90px;
-  height: 75px;
-}
-.desc .ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 12px;
-}
-.desc .jibun {
-  font-size: 11px;
-  color: #888;
-  margin-top: -2px;
-}
-.info .img {
+
+.imginfo {
   position: absolute;
-  top: 6px;
-  left: 5px;
-  width: 73px;
-  height: 71px;
-  border: 1px solid #ddd;
-  color: #888;
+  width: 365px;
+  height: 115px;
   overflow: hidden;
+  background-image: url(images/facilitiesinfo01.png);
+  margin-bottom: 20px;
 }
+
 .info:after {
   content: "";
   position: absolute;
@@ -406,6 +391,239 @@ hr {
   height: 12px;
   background: url("https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png");
 }
-.info .link {
-  color: #5085bb;
+
+/* 지도 좌상단 메뉴 */
+
+#mapwrap {
+  position: relative;
+  overflow: hidden;
+}
+.category,
+.category * {
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+.category {
+  position: absolute;
+  overflow: hidden;
+  top: 10px;
+  left: 10px;
+  width: 212px;
+  height: 80px;
+  z-index: 10;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px #888;
+}
+
+.category > ul > li {
+  font-size: 8px;
+}
+
+.category .menu_selected {
+  background: #ff5f4a;
+  color: #fff;
+  border-left: 1px solid #915b2f;
+  border-right: 1px solid #915b2f;
+  margin: 0 -1px;
+}
+
+.category li {
+  list-style: none;
+  float: left;
+  width: 53px;
+  height: 80px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.category .ico_comm {
+  display: block;
+  margin: 0 auto 2px;
+  width: 22px;
+  height: 26px;
+  background: url("https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/category.png")
+    no-repeat;
+}
+
+.category .ico_coffee {
+  background-position: -10px 0;
+}
+
+.category .ico_store {
+  background-position: -10px -36px;
+}
+
+.category .ico_carpark {
+  background-position: -10px -72px;
+}
+
+#all_on,
+#all_off {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.on {
+  display: block;
+}
+
+.off {
+  display: none;
+}
+
+/* 인포메이션 페이지 */
+
+#infoHeader {
+  background-image: url(images/info_mainbg.png);
+  height: 150px;
+  width: 99.99%;
+  margin-top: 0px;
+}
+
+#infoBox {
+  margin: 0 auto;
+  width: 1369px;
+  height: 675px;
+  overflow: hidden;
+  margin-top: 35px;
+}
+
+#infoboxTop {
+  height: 325px;
+}
+
+#infoboxTop > a {
+  color: #000000;
+}
+
+#infoboxBottom {
+  height: 325px;
+  margin-top: 20px;
+}
+
+#infoHeader > h1 {
+  font-size: 46px;
+  color: #ffffff;
+  padding-top: 82px;
+  margin-left: 277px;
+}
+
+#infoMainBox {
+  width: 673px;
+  height: 325px;
+  border: 1px solid #cbcbcb;
+  float: left;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+#infoSubBox1,
+#infoSubBox2,
+#infoSubBox3,
+#infoSubBox4,
+#infoSubBox5,
+#infoSubBox6 {
+  width: 325px;
+  height: 325px;
+  border: 1px solid #cbcbcb;
+  float: left;
+  overflow: hidden;
+}
+
+#infoSubBox1,
+#infoSubBox3,
+#infoSubBox4,
+#infoSubBox5 {
+  margin-right: 20px;
+}
+
+#infoSubBox1 {
+  background-image: url(images/info_02.png);
+}
+
+#infoSubBox2 {
+  background-image: url(images/info_03.png);
+}
+
+#infoSubBox6 {
+  background-image: url(images/info_04.png);
+}
+
+#infoMainBox > h1 {
+  font-size: 30px;
+  margin-top: 15px;
+  margin-left: 15px;
+  float: left;
+}
+
+#infoMainBox > h3 {
+  font-size: 16px;
+  margin-top: 100px;
+  margin-left: 15px;
+  float: left;
+  font-weight: normal;
+}
+
+#imbPhoto > img {
+  float: right;
+  height: 325px;
+}
+
+/* 인포메이션 디테일페이지 */
+
+#infoDetailHeader {
+  background-image: url(images/info_h02.png);
+  height: 350px;
+  width: 99.99%;
+  margin-top: 0px;
+}
+
+#infoDetailHeader > h1 {
+  font-size: 65px;
+  color: #ffffff;
+  padding-top: 70px;
+  margin-left: 410px;
+}
+
+#infoDetailHeader > img {
+  margin-top: 30px;
+  margin-left: 410px;
+}
+
+#infoDetailArticle {
+  width: 1090px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+#infoDetailArticle > h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+#infoDetailArticle > p {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: normal;
+}
+
+#infoDetailArticle > img {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+#infoDetailArticle > hr {
+  margin-top: 50px;
+}
+
+#infoDetailBoxBottom {
+  width: 1465px;
+  height: 325px;
+  margin: 0 auto;
+  margin-top: 75px;
+  margin-bottom: 100px;
 }
