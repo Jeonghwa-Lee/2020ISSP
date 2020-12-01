@@ -265,18 +265,18 @@ hr {
 }
 
 .NMBSubtitle {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: normal;
   margin-bottom: 15px;
 }
 
 .NMBAriticle {
   margin-top: 71px;
-  margin-bottom: 160px;
+  margin-bottom: 100px;
 }
 
 .NMBAriticle > p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   margin-bottom: 18px;
 }
@@ -343,9 +343,13 @@ hr {
   box-shadow: 0px 1px 2px #888;
 }
 
+.title {
+  margin-bottom: -20px;
+}
+
 .title > h1 {
-  font-size: 33px;
-  margin-top: 15px;
+  font-size: 24px;
+  margin-top: 18px;
   margin-left: 18px;
 }
 
@@ -381,6 +385,15 @@ hr {
   margin-bottom: 20px;
 }
 
+.datainfo {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/facilitiesinfo02.png);
+}
+
 .info:after {
   content: "";
   position: absolute;
@@ -412,7 +425,6 @@ hr {
   width: 212px;
   height: 80px;
   z-index: 10;
-  /* border: 1px solid black; */
   border-radius: 5px;
   text-align: center;
   background-color: #fff;
@@ -542,15 +554,27 @@ hr {
 }
 
 #infoSubBox1 {
-  background-image: url(images/info_02.png);
+  background-image: url(images/info_image.png);
 }
 
 #infoSubBox2 {
-  background-image: url(images/info_03.png);
+  background-image: url(images/info_image_1.png);
+}
+
+#infoSubBox3 {
+  background-image: url(images/info_image_2.png);
+}
+
+#infoSubBox4 {
+  background-image: url(images/info_image_3.png);
+}
+
+#infoSubBox5 {
+  background-image: url(images/info_image_4.png);
 }
 
 #infoSubBox6 {
-  background-image: url(images/info_04.png);
+  background-image: url(images/info_image_5.png);
 }
 
 #infoMainBox > h1 {

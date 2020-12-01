@@ -221,25 +221,26 @@ function changeMarker(type){
 var content01 = '<div class="wrap">' + 
             '    <div class="info">' + 
             '        <div class="title">' + 
-            '            <h1>Shi hong tsu</h1>' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
             '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
             '        </div>' + 
             '        <div class="body">' + 
             '            <div class="imginfo"> </div>' +  
+            '            <div class="datainfo"> </div>' +  
             '        </div>' + 
             '    </div>' +    
             '</div>';
 
 
-var markerPositions = cafePositions[0];
-var markerData = cafeMarkers[0]
+var markerPositions = foodPositions[0];
+var markerData = foodMarkers[0]
 
 var overlay = new kakao.maps.CustomOverlay({
     content: content01,
-    position: cafePositions[0]
+    position: foodPositions[0]
 });
 
-kakao.maps.event.addListener(cafeMarkers[0], 'click', function() {
+kakao.maps.event.addListener(foodMarkers[0], 'click', function() {
     overlay.setMap(map);
 });
 
