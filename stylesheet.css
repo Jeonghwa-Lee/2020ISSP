@@ -613,7 +613,7 @@ hr {
   margin-top: 0px;
 }
 
-#infoDetailHeader,
+#infoDetailHeader > h1,
 #infoDetailHeader2 > h1 {
   font-size: 65px;
   color: #ffffff;
@@ -621,7 +621,7 @@ hr {
   margin-left: 410px;
 }
 
-#infoDetailHeader,
+#infoDetailHeader > img,
 #infoDetailHeader2 > img {
   margin-top: 30px;
   margin-left: 410px;
