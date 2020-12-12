@@ -214,7 +214,6 @@ hr {
   width: 1460px;
   height: 830px;
   margin: 0 auto;
-  margin-top: 45px;
 }
 
 #noticeMainBox {
@@ -231,9 +230,10 @@ hr {
   float: right;
 }
 
-#nPageTitle {
+#noticeArticle > h1 {
   font-size: 46px;
   margin-bottom: 45px;
+  padding-top: 45px;
 }
 
 #articleBox1,
@@ -376,24 +376,6 @@ hr {
   height: 470px;
 }
 
-.imginfo {
-  position: absolute;
-  width: 365px;
-  height: 115px;
-  overflow: hidden;
-  background-image: url(images/facilitiesinfo01.png);
-  margin-bottom: 20px;
-}
-
-.datainfo {
-  position: absolute;
-  overflow: hidden;
-  margin-top: 135px;
-  width: 364px;
-  height: 322px;
-  background-image: url(images/facilitiesinfo02.png);
-}
-
 .info:after {
   content: "";
   position: absolute;
@@ -487,6 +469,291 @@ hr {
   display: none;
 }
 
+/* 지도 정보 관련 */
+
+.imginfo00 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/fimage00.png);
+  margin-bottom: 20px;
+}
+
+.datainfo00 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/finfo00.png);
+}
+
+.imginfo01 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/fimage01.jpg);
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.datainfo01 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/finfo01.png);
+}
+
+.imginfo02 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/fimage02.jpg);
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.datainfo02 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/finfo02.png);
+}
+
+.imginfo03 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/fimage03.jpg);
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.datainfo03 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/finfo03.png);
+}
+
+.imginfo04 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/fimage04.jpg);
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.datainfo04 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/finfo04.png);
+}
+
+.imginfo05 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/fimage05.jpg);
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.datainfo05 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/finfo05.png);
+}
+
+.imginfo06 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/fimage06.jpg);
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.datainfo06 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/finfo06.png);
+}
+
+.imginfo07 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/cimage00.jpg);
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.datainfo07 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/cinfo00.png);
+}
+
+.imginfo08 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/cimage01.jpg);
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.datainfo08 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/cinfo01.png);
+}
+
+.imginfo09 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/cimage02.jpg);
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.datainfo09 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/cinfo02.png);
+}
+
+.imginfo10 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/cimage03.jpg);
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.datainfo10 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/cinfo03.png);
+}
+.imginfo11 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/cimage04.jpg);
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.datainfo11 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/cinfo04.png);
+}
+
+.imginfo12 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/cimage05.jpg);
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.datainfo12 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/cinfo05.png);
+}
+
+.imginfo13 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/etcimage00.jpg);
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.datainfo13 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/etcinfo00.png);
+}
+
+.imginfo14 {
+  position: absolute;
+  width: 365px;
+  height: 115px;
+  overflow: hidden;
+  background-image: url(images/etcimage01.jpg);
+  background-size: 100%;
+  margin-bottom: 20px;
+}
+
+.datainfo14 {
+  position: absolute;
+  overflow: hidden;
+  margin-top: 135px;
+  width: 364px;
+  height: 322px;
+  background-image: url(images/etcinfo01.png);
+}
+
 /* 인포메이션 페이지 */
 
 #infoHeader {
@@ -494,6 +761,13 @@ hr {
   height: 150px;
   width: 99.99%;
   margin-top: 0px;
+}
+
+#infoHeader > h1 {
+  font-size: 46px;
+  color: #ffffff;
+  padding-top: 82px;
+  margin-left: 277px;
 }
 
 #infoBox {
@@ -515,13 +789,6 @@ hr {
 #infoboxBottom {
   height: 325px;
   margin-top: 20px;
-}
-
-#infoHeader > h1 {
-  font-size: 46px;
-  color: #ffffff;
-  padding-top: 82px;
-  margin-left: 277px;
 }
 
 #infoMainBox {
@@ -659,4 +926,51 @@ hr {
   margin: 0 auto;
   margin-top: 75px;
   margin-bottom: 100px;
+}
+
+/* 세이브드관련 */
+
+#savedbg {
+  background-color: #fbfaf8;
+  margin-top: 0px;
+}
+
+#sInfoHeader {
+  height: 150px;
+  width: 99.99%;
+  margin-top: 0px;
+}
+
+#sInfoHeader > h1 {
+  font-size: 46px;
+  color: black;
+  padding-top: 82px;
+  margin-left: 277px;
+}
+
+#sInfoBox1,
+.sInfoSubBox {
+  width: 325px;
+  height: 325px;
+  border: 1px solid #cbcbcb;
+  float: left;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.sInfoSubBox:nth-child(4) {
+  margin-right: 0;
+}
+
+#sInfoBox1 {
+  background-image: url(images/savedinfo.png);
+}
+
+#sNoticeMainBox {
+  border: 1px solid #cbcbcb;
+  background-color: #f6e1e4;
+  width: 625px;
+  height: 595px;
+  float: left;
+  padding: 61px 41px 47px 40px;
 }

@@ -14,7 +14,7 @@ var foodPositions = [
   new kakao.maps.LatLng(37.54780850986535, 127.07230948018997),
   new kakao.maps.LatLng(37.54873267588706, 127.07246801087629),
   new kakao.maps.LatLng(37.54761378116078, 127.07065604245271),
-  new kakao.maps.LatLng(37.54761378116078, 127.07065604245271),
+  new kakao.maps.LatLng(37.54846566087297, 127.07269415409134),
   new kakao.maps.LatLng(37.548272842681136, 127.07155817128879)                
 ];
 
@@ -218,6 +218,28 @@ function changeMarker(type){
   }  
 } 
 
+var content00 = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="imginfo00"> </div>' +  
+            '            <div class="datainfo00"> </div>' +  
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+var overlay00 = new kakao.maps.CustomOverlay({
+    content: content00,
+    position: foodPositions[0]
+});
+
+kakao.maps.event.addListener(foodMarkers[0], 'click', function() {
+    overlay00.setMap(map);
+});
+
 var content01 = '<div class="wrap">' + 
             '    <div class="info">' + 
             '        <div class="title">' + 
@@ -225,25 +247,321 @@ var content01 = '<div class="wrap">' +
             '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
             '        </div>' + 
             '        <div class="body">' + 
-            '            <div class="imginfo"> </div>' +  
-            '            <div class="datainfo"> </div>' +  
+            '            <div class="imginfo01"> </div>' +  
+            '            <div class="datainfo01"> </div>' +  
             '        </div>' + 
             '    </div>' +    
             '</div>';
 
-
-var markerPositions = foodPositions[0];
-var markerData = foodMarkers[0]
-
-var overlay = new kakao.maps.CustomOverlay({
+var overlay01 = new kakao.maps.CustomOverlay({
     content: content01,
-    position: foodPositions[0]
+    position: foodPositions[1]
 });
 
-kakao.maps.event.addListener(foodMarkers[0], 'click', function() {
-    overlay.setMap(map);
+kakao.maps.event.addListener(foodMarkers[1], 'click', function() {
+    overlay01.setMap(map);
+});
+
+var content02 = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="imginfo02"> </div>' +  
+            '            <div class="datainfo02"> </div>' +  
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+var overlay02 = new kakao.maps.CustomOverlay({
+    content: content02,
+    position: foodPositions[2]
+});
+
+kakao.maps.event.addListener(foodMarkers[2], 'click', function() {
+    overlay02.setMap(map);
+});
+
+var content03 = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="imginfo03"> </div>' +  
+            '            <div class="datainfo03"> </div>' +  
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+var overlay03 = new kakao.maps.CustomOverlay({
+    content: content03,
+    position: foodPositions[3]
+});
+
+kakao.maps.event.addListener(foodMarkers[3], 'click', function() {
+    overlay03.setMap(map);
+});
+
+var content04 = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="imginfo04"> </div>' +  
+            '            <div class="datainfo04"> </div>' +  
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+var overlay04 = new kakao.maps.CustomOverlay({
+    content: content04,
+    position: foodPositions[4]
+});
+
+kakao.maps.event.addListener(foodMarkers[4], 'click', function() {
+    overlay04.setMap(map);
+});
+
+var content05 = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="imginfo05"> </div>' +  
+            '            <div class="datainfo05"> </div>' +  
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+var overlay05 = new kakao.maps.CustomOverlay({
+    content: content05,
+    position: foodPositions[5]
+});
+
+kakao.maps.event.addListener(foodMarkers[5], 'click', function() {
+    overlay05.setMap(map);
+});
+
+var content06 = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="imginfo06"> </div>' +  
+            '            <div class="datainfo06"> </div>' +  
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+var overlay06 = new kakao.maps.CustomOverlay({
+    content: content06,
+    position: foodPositions[6]
+});
+
+kakao.maps.event.addListener(foodMarkers[6], 'click', function() {
+    overlay06.setMap(map);
+});
+
+var content07 = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="imginfo07"> </div>' +  
+            '            <div class="datainfo07"> </div>' +  
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+var overlay07 = new kakao.maps.CustomOverlay({
+    content: content07,
+    position: cafePositions[0]
+});
+
+kakao.maps.event.addListener(cafeMarkers[0], 'click', function() {
+    overlay07.setMap(map);
+});
+
+var content08 = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="imginfo08"> </div>' +  
+            '            <div class="datainfo08"> </div>' +  
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+var overlay08 = new kakao.maps.CustomOverlay({
+    content: content08,
+    position: cafePositions[1]
+});
+
+kakao.maps.event.addListener(cafeMarkers[1], 'click', function() {
+    overlay08.setMap(map);
+});
+
+var content09 = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="imginfo09"> </div>' +  
+            '            <div class="datainfo09"> </div>' +  
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+var overlay09 = new kakao.maps.CustomOverlay({
+    content: content09,
+    position: cafePositions[2]
+});
+
+kakao.maps.event.addListener(cafeMarkers[2], 'click', function() {
+    overlay09.setMap(map);
+});
+
+var content10 = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="imginfo10"> </div>' +  
+            '            <div class="datainfo10"> </div>' +  
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+var overlay10 = new kakao.maps.CustomOverlay({
+    content: content10,
+    position: cafePositions[3]
+});
+
+kakao.maps.event.addListener(cafeMarkers[3], 'click', function() {
+    overlay10.setMap(map);
+});
+
+var content11 = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="imginfo11"> </div>' +  
+            '            <div class="datainfo12"> </div>' +  
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+var overlay11 = new kakao.maps.CustomOverlay({
+    content: content11,
+    position: cafePositions[5]
+});
+
+kakao.maps.event.addListener(cafeMarkers[5], 'click', function() {
+    overlay11.setMap(map);
+});
+
+var content12 = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="imginfo12"> </div>' +  
+            '            <div class="datainfo11"> </div>' +  
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+var overlay12 = new kakao.maps.CustomOverlay({
+    content: content12,
+    position: cafePositions[4]
+});
+
+kakao.maps.event.addListener(cafeMarkers[4], 'click', function() {
+    overlay12.setMap(map);
+});
+
+var content13 = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="imginfo13"> </div>' +  
+            '            <div class="datainfo13"> </div>' +  
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+var overlay13 = new kakao.maps.CustomOverlay({
+    content: content13,
+    position: etcPositions[0]
+});
+
+kakao.maps.event.addListener(etcMarkers[0], 'click', function() {
+    overlay13.setMap(map);
+});
+
+var content14 = '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            <h1>Persian Gulf Pizza</h1>' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="imginfo14"> </div>' +  
+            '            <div class="datainfo14"> </div>' +  
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+
+var overlay14 = new kakao.maps.CustomOverlay({
+    content: content14,
+    position: etcPositions[1]
+});
+
+kakao.maps.event.addListener(etcMarkers[1], 'click', function() {
+    overlay14.setMap(map);
 });
 
 function closeOverlay() {
-    overlay.setMap(null);     
+    overlay00.setMap(null);
+    overlay01.setMap(null);     
+    overlay02.setMap(null);
+    overlay03.setMap(null);
+    overlay04.setMap(null);
+    overlay05.setMap(null);     
+    overlay06.setMap(null);
+    overlay07.setMap(null);
+    overlay08.setMap(null);
+    overlay09.setMap(null);     
+    overlay10.setMap(null);
+    overlay11.setMap(null);
+    overlay12.setMap(null);
+    overlay13.setMap(null);  
+    overlay14.setMap(null);     
 }
