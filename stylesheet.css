@@ -821,11 +821,11 @@ hr {
 }
 
 #infoSubBox1 {
-  background-image: url(images/info_image.png);
+  background-image: url(images/info_image_6.png);
 }
 
 #infoSubBox2 {
-  background-image: url(images/info_image_1.png);
+  background-image: url(images/info_image_7.png);
 }
 
 #infoSubBox3 {
@@ -973,4 +973,82 @@ hr {
   height: 595px;
   float: left;
   padding: 61px 41px 47px 40px;
+}
+
+/* 세이브드 메인페이지 */
+
+#savedarticle {
+  width: 1460px;
+  margin: 0 auto;
+}
+
+#savedarticle > h1 {
+  font-size: 46px;
+  padding-top: 140px;
+  margin-bottom: 100px;
+  display: inline-block;
+}
+
+#savedarticle > img {
+  float: right;
+  padding-top: 180px;
+}
+
+#sArticle {
+  width: 1460px;
+  margin: 0 auto;
+}
+
+#sArticleBox1,
+#sArticleBox2,
+#sArticleBox3 {
+  width: 450px;
+  height: 500px;
+  float: left;
+}
+
+#sArticleBox1,
+#sArticleBox2 {
+  margin-right: 50px;
+}
+
+#sArticleBox1 > a,
+#sArticleBox2 > a,
+#sArticleBox3 > a {
+  color: black;
+}
+
+#sArticleBox1 > a > h2,
+#sArticleBox2 > a > h2,
+#sArticleBox3 > a > h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#sArticleBox1 > a > ul > li {
+  margin-left: 45px;
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: 48px;
+  color: #c10230;
+}
+
+#sArticleBox1 > a > ul > li:first-child > img {
+  margin-left: 15px;
+}
+
+#sArticleBox2 > a > div,
+#sArticleBox3 > a > div {
+  width: 222px;
+  height: 222px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  overflow: hidden;
+}
+
+#sArticleBox2 > a > div > img,
+#sArticleBox3 > a > div > img {
+  height: 222px;
+  margin: 0 auto;
 }

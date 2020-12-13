@@ -42,13 +42,49 @@
 
     <hr />
 
-    <div id="map"></div>
+    <div id="mapwrap"> 
+      <!-- 지도가 표시될 div -->
+      <div id="map"></div>
+      <!-- 지도 위에 표시될 마커 카테고리 -->
+      <div class="category">
+          <ul>
+            <li id="allMenu" onclick="changeMarker('all')">
+              <div>
+                <img id="all_on" class='off' src="images/icon_a_1.png" />
+                <img id="all_off" class='on' src="images/icon_a_2.png" />
+              </div>
+              all
+            </li>
+            <li id="foodMenu" onclick="changeMarker('food')">
+              <div>
+                <img id="food_on" class='off' src="images/icon_f_1.png" />
+                <img id="food_off" class='on' src="images/icon_f_2.png" />
+              </div>
+              food
+            </li>
+            <li id="cafeMenu" onclick="changeMarker('cafe')">
+              <div>
+                <img id="cafe_on" class='off' src="images/icon_c_1.png" />
+                <img id="cafe_off" class='on' src="images/icon_c_2.png" />
+              </div>
+              cafe
+            </li>
+            <li id="etcMenu" onclick="changeMarker('etc')">
+              <div>
+                <img id="etc_on" class='off' src="images/icon_e_1.png" />
+                <img id="etc_off" class='on' src="images/icon_e_2.png" />
+              </div>
+              etc
+            </li>
+          </ul>
+      </div>
+  </div>
 
     <script
       type="text/javascript"
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f0906080de8b4f813b522d46dbdc2649"
     ></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script5.js"></script>
 
   </body>
 </html>
